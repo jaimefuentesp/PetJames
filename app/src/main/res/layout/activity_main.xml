@@ -9,10 +9,19 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="@string/texto_titulo"
+        android:id="@+id/tvTitulo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+    
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnMiBoton"
+        android:layout_below="@+id/tvTitulo"
+        android:text="@string/texto_boton_click"
+        android:theme="@style/MiBotonRaised"/>
 
 </android.support.constraint.ConstraintLayout>
